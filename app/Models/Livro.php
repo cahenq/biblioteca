@@ -8,7 +8,7 @@ class Livro extends Model
 {
     protected $fillable = [
         'titulo', 'autor', 'descricao', 'editora', 'publicacao_data',
-        'isbn', 'localizacao', 'paginas', 'genero', 'idioma', 'image_path'
+        'isbn', 'localizacao', 'paginas', 'genero', 'idioma', 'status', 'image_path'
     ];
     
 }

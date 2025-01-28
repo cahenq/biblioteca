@@ -11343,3 +11343,139 @@ footer.footer {
 #booksContainer .book .card-body a {
   margin-top: 10px; /* espaçamento no botão */
 }
+/* Estilo do card de empréstimo */
+/* Estilo do card de empréstimo */
+/* Estilo do card de empréstimo */
+.card-emprestimo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px;
+  border: 1px solid #ccc;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card-emprestimo img {
+  width: 100px;
+  height: auto;
+  border-radius: 4px;
+}
+
+.card-emprestimo .details {
+  flex: 1;
+  margin-left: 15px;
+}
+
+.card-emprestimo .details h2 {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.card-emprestimo .details p {
+  margin: 5px 0;
+  font-size: 14px;
+}
+
+.button-emprestimo {
+  padding: 10px 15px;
+  border-radius: 5px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.button-emprestimo.available {
+  background-color: #003366;
+  color: white;
+  border: none;
+  transition: background-color 0.3s ease;
+}
+
+.button-emprestimo.available:hover {
+  background-color: #002244;
+}
+
+.button-emprestimo.unavailable {
+  background-color: #555;
+  color: white;
+  cursor: not-allowed;
+  border: none;
+}
+
+/* Estilo específico para o formulário de empréstimo */
+.form-emprestimo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.form-emprestimo input {
+  width: 100%; /* Barra de pesquisa bem longa */
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+}
+
+.form-emprestimo button {
+  padding: 10px 15px;
+  background-color: black;
+  color: white;
+  border-radius: 5px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.form-emprestimo button:hover {
+  background-color: #333;
+}
+
+.form-emprestimo .dropdown {
+  margin-left: 15px;
+}
+
+.form-emprestimo .dropdown button {
+  background-color: #333; /* Cor de fundo do filtro */
+  color: white;
+  border-radius: 5px;
+  padding: 10px 15px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.form-emprestimo .dropdown button:hover {
+  background-color: #444;
+}
+
+/* Dropdown */
+.dropdown-menu {
+  display: block;
+}
+
+.dropdown-menu select {
+  width: 200px;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .form-emprestimo {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .form-emprestimo input {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .form-emprestimo .dropdown {
+    width: 100%;
+  }
+}

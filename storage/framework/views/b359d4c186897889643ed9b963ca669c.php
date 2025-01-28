@@ -14,15 +14,16 @@
                         <!-- Logo em círculo acima do link Biblioteca -->
                         <div class="logo-container">
                             <div class="circle">
-                                <img src="images/logo.png" alt="Logo">
+                                <img src="img/logo-escola.png" alt="Logo">
                             </div>
                         </div>
                         <a class="nav-link <?php echo e(Route::currentRouteName() == 'biblioteca' ? 'active' : ''); ?>" href="<?php echo e(route('biblioteca')); ?>" style="color: #343a40;">
                             Início
                         </a>
-                        <a class="nav-link <?php echo e(Route::currentRouteName() == 'emprestimo-livro' ? 'active' : ''); ?>" href="<?php echo e(route('emprestimo-livro')); ?>" style="color: #343a40;">
+                        <a class="nav-link <?php echo e(Route::currentRouteName() == 'emprestimos.buscar-livro' ? 'active' : ''); ?>" href="<?php echo e(route('emprestimos.buscar-livro')); ?>" style="color: #343a40;">
                             Empréstimo de livro
                         </a>
+                        
                         <a class="nav-link <?php echo e(Route::currentRouteName() == 'cadastrar-livro' ? 'active' : ''); ?>" href="<?php echo e(route('cadastrar-livro')); ?>" style="color: #343a40;">
                             Adicionar Livro
                         </a>
